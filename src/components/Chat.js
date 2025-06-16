@@ -14,7 +14,7 @@ export default function Chat() {
     setInput('');
     try {
       const res = await axios.post(
-        'https://your-proxy-url.vercel.app/api/chat',
+        'https://mbti-gpt-proxy.vercel.app/api/chat',
         { message: input }
       );
       setMessages(prev => [...prev, { from: 'bot', text: res.data.reply }]);
