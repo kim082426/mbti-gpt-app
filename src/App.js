@@ -1,17 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Chat from './components/Chat';
 
-export default function App() {
-  const [started, setStarted] = useState(false);
+function App() {
   return (
-    <div className="app-container">
-      {!started ? (
-        <button className="start-btn" onClick={() => setStarted(true)}>
-          상담 시작
-        </button>
-      ) : (
-        <Chat />
-      )}
+    <div style={{ padding: '2rem' }}>
+      <h1>MBTI GPT 상담</h1>
+      <Chat />
     </div>
   );
 }
+
+export default App;
