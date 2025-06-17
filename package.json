@@ -1,4 +1,10 @@
-"scripts": {
-  "build": "react-scripts build",
-  "start": "react-scripts start"
+{
+  "scripts": {
+    "build": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-scripts": "5.0.1"
+  }
 }
